@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>
+</title>
+<style>
+#d1
+{
+height: 100px;
+width: 100px;
+padding-left: 50px;
+padding-top:50px;
+border-radius: 100px;
+background-color: #3f85f4;
+position: absolute;
+-webkit-animation: myani 2s;
+}
+#d2
+{
+height: 100px;
+width: 100px;
+padding-left: 50px;
+padding-top:50px;
+border-radius: 100px;
+background-color: blue;
+position: absolute;
+margin-left: 300px;
+margin-top: 400px;
+-webkit-animation: right 2s;
+}
+#d3
+{
+height: 100px;
+width: 100px;
+padding-left: 50px;
+padding-top:50px;
+border-radius: 100px;
+background-color: blue;
+position: absolute;
+margin-left: 700px;
+margin-top: 400px;
+-webkit-animation: left 2s;
+}
+@-webkit-keyframes myani{
+0%
+{
+left:500px;
+top:0px;
+}
+100%
+{
+
+z-index:99;
+left: 500px;
+top: 100px;
+transform: rotate(900deg);
+}
+}
+@-webkit-keyframes right{
+0%
+{
+left:0px;
+top:400px;
+}
+100%
+{
+
+z-index:99;
+left: 300px;
+top: 400px;
+transform: rotate(900deg);
+}
+}
+@-webkit-keyframes myani{
+0%
+{
+left:0px;
+top:0px;
+}
+100%
+{
+
+z-index:99;
+left: 500px;
+top: 100px;
+transform: rotate(900deg);
+}
+}
+
+</style>
+</head>
+<body>
+<div id="d1"><a href="cycle2.html"><span></span></a></div>
+<div id="d2"></div>
+<div id="d3"></div>
+</body>
+</html>

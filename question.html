@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+Make Quiz
+</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+body{
+background: -webkit-linear-gradient(red,green);
+}
+select
+{
+ background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 0;
+  color: black;
+  outline: 0;
+  padding: 5px;
+  width: 20%;
+  border-radius : 10px;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+#d1
+{
+font-style: italic;
+margin-left: 50px;
+margin-top: 80px;
+margin-bottom: 80px;
+  background: white;
+font-size: 1.5em;
+color: black;
+height: 580px;
+border-radius: 30px;
+width: 1200px;
+padding-left:30px;
+padding-top: 50px;
+border-width: 20px;
+border-color: blue;
+position: absolute;
+}
+#q1
+{
+
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 0;
+  color: black;
+  outline: 0;
+  padding: 5px;
+  width: 80%;
+  border-radius : 10px;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+#option
+{
+
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 0;
+  color: black;
+  outline: 0;
+  padding: 5px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+#submit
+{
+
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 0;
+  color: black;
+  outline: 0;
+  padding: 5px;
+  width: 15%;
+  border-radius: 10px;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+#correct
+{
+
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 0;
+  color: black;
+  outline: 0;
+  padding: 5px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #e8eeef;
+  color: black;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+	<div id="d1">
+	<form>
+		Enter question: <input class="form-control" type = "text" size = "100%" id="q1">
+		<br><br>
+		A. <input class="form-control" type = "text" id="option"><br>
+		B. <input class="form-control" type = "text" id="option"><br>
+		C. <input class="form-control" type = "text" id="option"><br>
+		D. <input class="form-control" type = "text" id="option"><br>
+		Correct answer: <input class="form-control" type = "text" id="correct"><br>
+		Category:  <select class="form-control">
+		<option>Sports</option>
+		<option>Movies</option>   
+		<option></option>   
+		<option></option>   
+		<option></option>   
+		</select><br>
+		Difficulty:<input class="form-control" type ="radio" value="easy">Easy <input type="radio" value="medium">Medium <input type="radio" value="difficult">Difficult 
+
+		<br><br>
+		<center><input id = "submit" type="submit" value="submit" name="submit"></center>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
